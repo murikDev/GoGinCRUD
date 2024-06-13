@@ -1,0 +1,36 @@
+### GET request to example server
+GET http://localhost:8080/albums
+###
+
+### GET album by id
+GET http://localhost:8080/albums?id=15
+###
+
+### Send POST request with json body
+POST http://localhost:8080/albums
+Content-Type: application/json
+
+{
+  "id": "15",
+  "title": "A song about go",
+  "artist": "Myrat",
+  "price": 5000.00
+}
+###
+
+### GET album by ID
+DELETE http://localhost:8080/albums/3
+###
+
+
+### Send POST request with json body
+PUT http://localhost:8080/albums/1
+Content-Type: application/json
+
+{
+  "id": "15",
+  "title": "A song about go",
+  "artist": "Myrat",
+  "price": 5000.00
+}
+###
